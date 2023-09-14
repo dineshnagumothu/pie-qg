@@ -13,14 +13,14 @@ Supervised Question Answering (QA) systems rely on domain-specific human-labeled
   sh setup.sh
   ```
 
-  <li><b>Paraphrase passages, extract triples and generate Questions</b></li>
+  <li><b>Paraphrase passages, extract triples and generate questions</b></li>
 
   This step paraphrases the passages, prepares the data for OpenIE6, extracts semantic triples from passages and generates synthetic training questions, and saves them to disk. 
 
   You can edit the settings in the bash file to define the number of GPUs ```NUM_GPUS``` to use.
   
   ```
-  sh question_generation.sh
+  sh generate_questions.sh
   ```
 
   <li><b>Train extractive QA models with synthetic training data and evaluate with standard datasets</b></li>
