@@ -11,10 +11,10 @@ python paraphrase.py --passage_file $PASSAGE_FILE_EXT
 
 #Convert paraphrased passages to sentences
 PARAPHRASED_PASSAGE_FILE="${PASSAGE_FILE}_paraphrased.txt"
-python convert_to_sentences.py --filename $PARAPHRASED_PASSAGE_FILE
+python convert_to_sentences.py --filename $PARAPHRASED_PASSAGE_FILE --coref
+#python convert_to_sentences.py --filename wikicorpus_paraphrased.txt --coref
 
 #Triple extraction
-
 eval "$(conda shell.bash hook)"
 conda activate triple
 cd openie6
